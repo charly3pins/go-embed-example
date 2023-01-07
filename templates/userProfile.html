@@ -1,0 +1,21 @@
+{{template "main" .}}
+{{define "content"}}
+<div class="container">
+  <div class="dashboard jumbotron-fluid">
+    <h1>User</h1>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{.Name }}</h5>
+            <p class="card-text">Email: {{.Email }}</p>
+            <p class="card-text">Address: {{.Address }}</p>
+            <p class="card-text">Phone number: {{.PhoneNumber }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}
